@@ -70,6 +70,9 @@ app.get("/", (req,res) =>{
 app.get("/successfulLogin" ,(req,res) =>{
     res.render("successfulLogin");
 })
+app.get("/successfulRegister", (req, res) => {
+  res.render("successfulRegister");
+});
 //Auth Routes
 app.get("/login",(req,res)=>{
     res.render("login");
@@ -94,7 +97,7 @@ app.post("/register",(req,res)=>{
             res.render("register");
         }
         passport.authenticate("local")(req,res,function(){
-            res.redirect("/login");
+            res.redirect("/successfulRegister");
         })    
     })
 })
