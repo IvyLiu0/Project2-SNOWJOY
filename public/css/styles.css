@@ -1,0 +1,99 @@
+/* Nest Nav */
+header {
+  background-color: #313131;
+  height: 200px;
+}
+
+#header {
+  text-align: center;
+}
+#header img {
+  margin: 70px 0 0 0;
+}
+
+nav {
+  text-align: center;
+  margin-top: 30px;
+  margin-left: -50px;
+  margin-bottom: 40px;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li, nav ul a {
+  font-family: Arial, Helvetica, Sans-Serif;
+  font-weight: bold;
+  color: #fff;
+  display: inline-block;
+  margin: 0 15px;
+}
+
+/* Variables */
+/* Login */
+#loginForm {
+  text-align: center;
+}
+#loginForm h4 {
+  font-family: Arial, Helvetica, Sans-Serif;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+#loginForm input {
+  width: 300px;
+  height: 50px;
+}
+#loginForm input::placeholder {
+  padding-left: 10px;
+}
+#loginForm span {
+  margin-top: 5px;
+  margin-left: 150px;
+  font-size: small;
+}
+#loginForm .btn {
+  background-color: #313131;
+  color: #fff;
+  width: 300px;
+  height: 50px;
+  margin-bottom: 5px;
+}
+
+/* Register */
+#register {
+  text-align: center;
+}
+#register h4 {
+  font-family: Arial, Helvetica, Sans-Serif;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+#register input {
+  width: 300px;
+  height: 50px;
+}
+#register input::placeholder {
+  padding-left: 10px;
+}
+#register span {
+  margin-top: 5px;
+  margin-left: 150px;
+  font-size: small;
+}
+#register .btn {
+  background-color: #313131;
+  color: #fff;
+  width: 300px;
+  height: 50px;
+  margin-bottom: 5px;
+}
+
+/* userprofile */
+#profile {
+  text-align: center;
+}
+#profile h4 {
+  margin-top: 100px;
+  font-family: Arial, Helvetica, Sans-Serif;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,83 @@
+@import "colors";
+@import "nav";
+
+/* Variables */
+$bodyfont: Arial, Helvetica, Sans-Serif;
+
+/* Login */
+#loginForm {
+    text-align: center;
+
+    h4 {
+        font-family: $bodyfont;
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+
+    input {
+        width: 300px;
+        height: 50px;
+    }
+
+    input::placeholder {
+       padding-left: 10px;
+    }
+
+    span {
+        margin-top: 5px;
+        margin-left: 150px;
+        font-size: small;
+    }
+
+    .btn {
+        background-color: $mainColor;
+        color: $mainTextColor;
+        width: 300px;
+        height: 50px;
+        margin-bottom: 5px;
+    }
+}
+
+/* Register */
+#register {
+    text-align: center;
+
+    h4 {
+        font-family: $bodyfont;
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+
+    input {
+        width: 300px;
+        height: 50px;
+    }
+
+    input::placeholder {
+       padding-left: 10px;
+    }
+
+    span {
+        margin-top: 5px;
+        margin-left: 150px;
+        font-size: small;
+    }
+
+    .btn {
+        background-color: $mainColor;
+        color: $mainTextColor;
+        width: 300px;
+        height: 50px;
+        margin-bottom: 5px;
+    }
+}
+
+/* userprofile */
+#profile {
+    text-align: center;
+
+    h4 {
+        margin-top: 100px;
+        font-family: $bodyfont;
+    }
+}

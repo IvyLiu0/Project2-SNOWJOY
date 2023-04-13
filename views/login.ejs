@@ -1,0 +1,20 @@
+<%- include('head'); %>
+<header>
+    <div id="header">
+      <a href="/"><img src="/images/snowjoy-white-logo.PNG" alt="logo" width="300"></a>
+    </div>
+</header>
+<main id="loginMain">
+    <div id="loginForm">
+        <h4>
+            Sign In
+        </h4>
+        <form action="/login" method="POST">
+            <input type="text" placeholder="username *" id="username" name="username"><br><br>
+            <input type="password"  placeholder="password *" id="password" name="password"><br>
+            <span>Forgot Your Password?</span><br><br>
+            <button class="btn">Sign In</button>
+            <p>Don't have an account? <a href="/register">Create one now.</a></p>
+        </form>
+    </div>
+</main>

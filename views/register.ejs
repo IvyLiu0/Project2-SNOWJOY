@@ -1,0 +1,20 @@
+<%- include('head'); %>
+<header>
+    <div id="header">
+      <a href="/"><img src="/images/snowjoy-white-logo.PNG" alt="logo" width="300"></a>
+    </div>
+</header>
+<main>
+    <div id="register">
+        <h4>
+            Create Your Account
+        </h4>
+        <form action="/register" method="POST">
+            <input type="text" placeholder="username *" id="username" name="username"><br><br>
+            <input type="password" placeholder="password *" id="password" name="password"><br><br>
+            <input type="email" placeholder="email *" name="email" id="email"><br><br>
+            <input type="text" placeholder="phone *" name="phone" id="phone"><br><br>
+            <button class="btn btn-success">Create Account</button>
+        </form>
+    </div>
+</main>
