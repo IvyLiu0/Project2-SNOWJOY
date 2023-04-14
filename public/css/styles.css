@@ -175,4 +175,14 @@ footer {
   margin-bottom: 50px;
 }
 
+/* contact */
+#contactform {
+  text-align: center;
+  margin-top: 50px;
+}
+#contactform .input {
+  width: 400px;
+  height: 35px;
+}
+
 /*# sourceMappingURL=styles.css.map */

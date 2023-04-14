@@ -1,5 +1,34 @@
 <%- include('header'); %>
 <%- include('nav'); %>
 
+<form action="/contact" method="POST" id="contactform">
+        <fieldset>
+            <legend><h2>&nbsp;&nbsp;&nbsp;Contact Us&nbsp;&nbsp;&nbsp;</h2></legend><br>
+            <input class="input" type="text" placeholder="Firstname" name="firstname"><br><br>
+            <input class="input" type="text" placeholder="Lastname" name="lastname"><br><br>
+            <input class="input" type="email" placeholder="Email" name="email"><br><br>
+            <input class="input" type="tel" placeholder="Phone" name="phone"><br><br>
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female
+            <br><br>
+            <label>what type of things you want to ask?&nbsp;&nbsp;</label>
+            <select>
+                <option>-</option>
+                <option>Snowboard</option>
+                <option>Protection</option>
+                <option>Clothes</option>
+                <option>Accessories</option>
+            </select>
+            <br><br>
+            <label>Tell us what we could help you today?</label><br><br>
+            <textarea rows="10" cols="50">Type here......</textarea><br><br>
+            <label>We will contact you as soon as possible after you submit.</label><br><br>
+            <input type="submit" value="Submit" id="sumbit">
+            <input type="reset" value="Reset" id="sumbit">
+            <br><br><br>
+        </fieldset>
+    </form>
+
 
 <%- include('footer'); %>

@@ -95,3 +95,14 @@ $bodyfont: Arial, Helvetica, Sans-Serif;
         margin-bottom: 50px;
     }
 }
+
+/* contact */
+#contactform {
+    text-align: center;
+    margin-top: 50px;
+
+    .input {
+        width: 400px;
+        height: 35px;
+    }
+}

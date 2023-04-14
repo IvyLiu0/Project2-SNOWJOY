@@ -116,7 +116,10 @@ app.post("/register",(req,res)=>{
 // });
 
 app.get("/logout", function (req, res) {
-  req.logout();
+  req.logout(req.user, (err) => {
+      if (err) return next(err);
+      res.redirect("/");
+    });
   res.status(200).clearCookie("connect.sid", {
     path: "/",
   });
