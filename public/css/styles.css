@@ -96,6 +96,17 @@ footer {
 }
 
 /* Variables */
+/* Home */
+#homeImage {
+  width: 100%;
+  background-position: center;
+}
+
+.jumbotron {
+  text-align: center;
+  margin-bottom: 0;
+}
+
 /* Login */
 #loginForm {
   text-align: center;
