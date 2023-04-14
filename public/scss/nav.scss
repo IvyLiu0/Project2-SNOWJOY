@@ -34,3 +34,73 @@ nav {
         }
     }
 }
+
+/* footer */
+footer {
+    background-color: $mainColor;
+    color:$mainTextColor;
+    height: 300px;
+}
+#footerUl {
+    text-align: center;
+    padding-top: 60px;
+    li {
+        display: inline;
+    }
+
+    li img {
+        margin-right: 20px;
+    }
+
+    li a {
+        color: $mainTextColor;
+        margin: 0 10px;
+    }
+}
+
+#information {
+    text-align: center;
+    font-family: $bodyfont;
+    h4 {
+        font-size: 15px;
+        display: inline-block;
+        margin-left: 20px;
+    }
+}
+
+#nondisclaimer {
+    text-align: center;
+    margin-top: 20px;
+    .social .fa{
+        padding: 10px;
+        font-size: 20px;
+        width: 40px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 40%;
+    }
+    .fa-facebook {
+        background: #3b5998;
+        color: white;
+    }
+    .fa-instagram {
+        background: #125688;
+        color: white;
+    }
+    .fa-twitter {
+        background: #55acee;
+        color: white;
+    }
+    .copy {
+        font-size: small;
+        margin-top: 10px;
+    }
+}
+
+#disclaimer {
+    p {
+        font-size: 10px;
+        text-align: center;
+        margin-top: 10px;
+    }
+}

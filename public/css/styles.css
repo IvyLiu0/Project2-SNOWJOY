@@ -28,6 +28,73 @@ nav ul li, nav ul a {
   margin: 0 15px;
 }
 
+/* footer */
+footer {
+  background-color: #313131;
+  color: #fff;
+  height: 300px;
+}
+
+#footerUl {
+  text-align: center;
+  padding-top: 60px;
+}
+#footerUl li {
+  display: inline;
+}
+#footerUl li img {
+  margin-right: 20px;
+}
+#footerUl li a {
+  color: #fff;
+  margin: 0 10px;
+}
+
+#information {
+  text-align: center;
+  font-family: Arial, Helvetica, Sans-Serif;
+}
+#information h4 {
+  font-size: 15px;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+#nondisclaimer {
+  text-align: center;
+  margin-top: 20px;
+}
+#nondisclaimer .social .fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 40%;
+}
+#nondisclaimer .fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+#nondisclaimer .fa-instagram {
+  background: #125688;
+  color: white;
+}
+#nondisclaimer .fa-twitter {
+  background: #55acee;
+  color: white;
+}
+#nondisclaimer .copy {
+  font-size: small;
+  margin-top: 10px;
+}
+
+#disclaimer p {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
 /* Variables */
 /* Login */
 #loginForm {

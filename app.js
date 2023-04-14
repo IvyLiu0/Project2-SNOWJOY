@@ -67,6 +67,12 @@ app.use(helmet());
 app.get("/", (req,res) =>{
     res.render("home");
 })
+app.get("/products", (req, res) => {
+  res.render("products");
+});
+app.get("/contact", (req, res) => {
+  res.render("contact");
+});
 app.get("/successfulLogin" ,(req,res) =>{
     res.render("successfulLogin");
 })
