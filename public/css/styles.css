@@ -1,7 +1,7 @@
 /* Nest Nav */
 header {
   background-color: #313131;
-  height: 200px;
+  height: 220px;
 }
 
 #header {
@@ -154,13 +154,25 @@ footer {
   margin-bottom: 5px;
 }
 
-/* userprofile */
+/* successfulLogin */
 #profile {
   text-align: center;
 }
 #profile h4 {
   margin-top: 100px;
   font-family: Arial, Helvetica, Sans-Serif;
+}
+
+/* products page */
+#products {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+#products img {
+  margin-bottom: 20px;
+}
+#products p {
+  margin-bottom: 50px;
 }
 
 /*# sourceMappingURL=styles.css.map */

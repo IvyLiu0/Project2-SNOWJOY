@@ -72,12 +72,26 @@ $bodyfont: Arial, Helvetica, Sans-Serif;
     }
 }
 
-/* userprofile */
+/* successfulLogin */
 #profile {
     text-align: center;
 
     h4 {
         margin-top: 100px;
         font-family: $bodyfont;
+    }
+}
+
+/* products page */
+#products {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+    img {
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-bottom: 50px;
     }
 }
