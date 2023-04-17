@@ -37,6 +37,13 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use(express.static("public"));
 
+app.use(function (req, res, next) {
+  if (req.user) {
+    res.locals.user = req.user;
+  }
+  next();
+});
+
 
 //=======================
 //      O W A S P
@@ -83,6 +90,11 @@ app.get("/successfulRegister", (req, res) => {
 app.get("/login",(req,res)=>{
     res.render("login");
 });
+app.get("/logout",(req, res) => {
+  res.render("logout");
+});
+
+
 app.post(
   "/login",
   passport.authenticate("local", {
