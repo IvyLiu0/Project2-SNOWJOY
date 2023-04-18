@@ -118,3 +118,21 @@ $bodyfont: Arial, Helvetica, Sans-Serif;
         height: 35px;
     }
 }
+
+/* registrants */
+#table {
+    text-align: center;
+    width: 80%;
+    margin: 50px auto;
+    th, td {
+    padding: 10px;
+    border-bottom: 1px solid #666;
+}
+th {
+  background: $mainColor;
+  color: #fff;
+}
+    td:first-child, th:first-child {
+    border-right: 1px solid #666;
+}
+}

@@ -196,4 +196,22 @@ footer {
   height: 35px;
 }
 
+/* registrants */
+#table {
+  text-align: center;
+  width: 80%;
+  margin: 50px auto;
+}
+#table th, #table td {
+  padding: 10px;
+  border-bottom: 1px solid #666;
+}
+#table th {
+  background: #313131;
+  color: #fff;
+}
+#table td:first-child, #table th:first-child {
+  border-right: 1px solid #666;
+}
+
 /*# sourceMappingURL=styles.css.map */

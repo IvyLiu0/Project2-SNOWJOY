@@ -11,6 +11,12 @@ const express               =  require('express'),
       rateLimit             =  require("express-rate-limit"),
       xss                   =  require("xss-clean"),
       helmet                =  require("helmet")
+      const path = require("path");
+      const auth = require("http-auth");
+      const Registration = mongoose.model("User");
+      const basic = auth.basic({
+        file: path.join(__dirname, "users.htpasswd"),
+      });
 
 //Connecting database
 mongoose.connect("mongodb://127.0.0.1:27017/SNOWJOY");
@@ -72,26 +78,27 @@ app.use(helmet());
 //      R O U T E S
 //=======================
 app.get("/", (req,res) =>{
-    res.render("home");
+    res.render("home", { title: "Home" });
 })
 app.get("/products", (req, res) => {
-  res.render("products");
+  res.render("products", { title: "Products" });
 });
 app.get("/contact", (req, res) => {
-  res.render("contact");
+  res.render("contact", { title: "Contact" });
 });
 app.get("/successfulLogin" ,(req,res) =>{
-    res.render("successfulLogin");
+    res.render("successfulLogin", { title: "LogIin" });
 })
 app.get("/successfulRegister", (req, res) => {
-  res.render("successfulRegister");
+  res.render("successfulRegister", { title: "Register" });
 });
+
 //Auth Routes
 app.get("/login",(req,res)=>{
-    res.render("login");
+    res.render("login", { title: "Log In" });
 });
 app.get("/logout",(req, res) => {
-  res.render("logout");
+  res.render("logout", { title: "Log Out" });
 });
 
 
@@ -103,8 +110,9 @@ app.post(
   }),
   function (req, res) {}
 );
+
 app.get("/register",(req,res)=>{
-    res.render("register");
+    res.render("register", { title: "Register" });
 });
 
 app.post("/register",(req,res)=>{
@@ -141,11 +149,35 @@ app.get("/logout", function (req, res) {
   });
 });
 
-function isLoggedIn(req,res,next) {
-    if(req.isAuthenticated()){
-        return next();
-    }
-    res.redirect("/login");
+// app.get("/registrants", isLoggedIn, (req, res) => {
+//   res.render("registrants", {
+//     user: req.user,
+//     isLoggedIn: req.isLogged,
+//   });
+// });
+
+app.get(
+  "/registrants",
+  basic.check((req, res) => {
+    Registration.find()
+      .then((registrations) => {
+        res.render("registrants", {
+          title: "Listing registrations",
+          registrations,
+        });
+      })
+      .catch(() => {
+        res.send("Sorry! Something went wrong.");
+      });
+  })
+);
+
+function isLoggedIn(req, res, next) {
+  if (req.isAuthenticated()) {
+    req.isLogged = true;
+    return next();
+  }
+  res.redirect("/");
 }
 
 //Listen On Server
