@@ -1,0 +1,17 @@
+{
+  "name": "SNOYJOY",
+  "short_name": "snowjoy",
+  "icons": [
+    {
+      "src": "/public/images/snowjoy.png",
+      "sizes": "196x196",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "lang": "en-US",
+  "start_url": "views/home.ejs",
+  "display": "standalone",
+  "background_color": "white",
+  "theme_color": "white"
+}

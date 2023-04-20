@@ -6,7 +6,8 @@
   "scripts": {
     "start": "nodemon app.js",
     "scss": "node-sass -o css/ css/",
-    "test": "jest"
+    "test": "jest",
+    "setupFiles": "./unitTesting.js"
   },
   "author": "ZL",
   "license": "ISC",
@@ -35,6 +36,10 @@
     "xss-clean": "^0.1.1"
   },
   "devDependencies": {
-    "jest": "^29.5.0"
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^29.5.0",
+    "superagent": "^8.0.9",
+    "supertest": "^6.3.3"
   }
 }
