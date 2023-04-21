@@ -177,7 +177,7 @@ function isLoggedIn(req, res, next) {
     req.isLogged = true;
     return next();
   }
-  res.redirect("/");
+  res.redirect("/registrants");
 }
 
 //Listen On Server

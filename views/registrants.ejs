@@ -12,9 +12,18 @@
             <th>Email</th>
             <th>Phone</th>
          </tr>
-         <tr>
-            <td>user.username</td>
-            <td>user.email</td>
-            <td>user.phone</td>
+         
+            <%if (registrations.length >0){ %>
+            <% registrations.forEach(function(user){ %>
+               <tr>
+                  <td><%= user.username %></td>
+                  <td><%= user.email %></td>
+                  <td><%= user.phone %></td>
+               </tr>
+            <% })}else{ %>
+               <tr>
+                  <td>No Record Found</td>
+               </tr>
+            <% } %>
          </tr>
 </table>
