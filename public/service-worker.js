@@ -1,15 +1,13 @@
 var cacheName = "snowjoy";
 var filesToCache = [
   "/",
-  "/views/header.ejs",
   "/views/contact.ejs",
   "/views/home.ejs",
   "/views/products.ejs",
   "/views/login.ejs",
   "/views/register.ejs",
-  "/views/registrants.ejs",
-  "/public/css/styles.css",
-  "/public/js/main.js",
+  "/css/styles.css",
+  "/js/main.js",
   "./app.js",
   "./server.js",
 ];
@@ -34,3 +32,5 @@ self.addEventListener("fetch", function (e) {
     })
   );
 });
+
+
