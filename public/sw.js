@@ -1,21 +1,24 @@
 var cacheName = "snowjoy";
 var filesToCache = [
   "/",
-  "views/contact.ejs",
-  "views/home.ejs",
-  "views/products.ejs",
-  "views/login.ejs",
-  "views/logout.ejs",
-  "views/register.ejs",
-  "views/registrants.ejs",
-  "public/css/styles.css",
-  "public/js/main.js",
+  "/contact.ejs",
+  "/home.ejs",
+  "/products.ejs",
+  "/login.ejs",
+  "/register.ejs",
+  "/registrants.ejs",
+  "/css/styles.css",
+  "/js/main.js",
+  "./app.js",
+  "./server.js"
 ];
 
 /* Start the service worker and cache all of the app's content */
 self.addEventListener("install", function (e) {
+  console.log('[Service Worker] Install ')
   e.waitUntil(
     caches.open(cacheName).then(function (cache) {
+      console.log('[Service Worker] Caching all: app shell and content')
       return cache.addAll(filesToCache);
     })
   );

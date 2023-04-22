@@ -11,3 +11,23 @@ describe("Test the root path", () => {
       });
   });
 });
+
+// describe('Test the addLike method', () => {
+//   beforeAll(() => {
+//     MongoDB.connect();
+//   });
+//   afterAll((done) => {
+//     mongoDB.disconnect(done);
+//   });
+// })
+
+// modeule.exports = {
+//   mongoose,
+//   connect: () => {
+//     mongoose.Promise = Promise;
+//     mongoose.connect(config.database[process.env.NODE_ENV]);
+//   },
+//   disconnect: done => {
+//     mongoose.disconnect(done);
+//   }
+// };
